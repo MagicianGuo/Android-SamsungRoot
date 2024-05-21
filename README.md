@@ -42,10 +42,12 @@
 
 10、面具开启Zygisk。
 
-## 五、常用的模块
+## 五、常用的模块或应用
 
 1、LSPosed模块（ https://github.com/LSPosed/LSPosed/releases/tag/v1.9.2 ）用于安装常用的Xposed模块功能。下载Zygisk版
 
 2、KnoxPatch模块（ https://github.com/Mesa-Labs-Archive/KnoxPatch/releases/tag/v0.6.8 ）用于让三星软件恢复使用（因为之前解BL锁导致了这些软件无法使用）
 
 3、Shamiko模块（ https://github.com/LSPosed/LSPosed.github.io/releases ）用于对应用隐藏Root（对少数应用无效）
+
+4、德尔塔（Delta）面具（ https://github.com/HuskyDG/magisk-files/releases/tag/v26.4-kitsune-2 ）隐藏Root的能力更强。不过刷此版本时要谨慎，有可能变砖。
