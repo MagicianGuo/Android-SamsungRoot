@@ -51,3 +51,5 @@
 3、Shamiko模块（ https://github.com/LSPosed/LSPosed.github.io/releases ）用于对应用隐藏Root（对少数应用无效）
 
 4、德尔塔（Delta）面具（ https://github.com/HuskyDG/magisk-files/releases ）隐藏Root的能力更强。不过刷此版本时最好选27001，26.4版本有可能变砖！
+
+5、MiPush模块（指南：https://bzmshang.top/MiPush-Framework_User-Guide ）
