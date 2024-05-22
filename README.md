@@ -34,7 +34,7 @@
 
 1、开机后，手机下载**三星版面具**（下载地址：https://github.com/fei-ke/Magisk/releases/tag/v26.4-mod 使用此版本是因为国行系统存在验证，用官方版本刷完开机时会卡在激活页面，用此版本可以跳过。）。下载后使用此面具修补刷机包的AP文件，修补完成后传回电脑；
 
-2、手机再次进入刷机模式，将刷机包的BL、CP、**修补过的AP**、**HOME_CSC **刷入手机。
+2、手机再次进入刷机模式，将刷机包的BL、CP、**修补过的AP**、**HOME_CSC** 刷入手机。
 
 3、刷完后自动开机。开机可能会强制进入recovery模式，点击清空数据即可。
 
@@ -54,8 +54,8 @@
 
 2、KnoxPatch模块（ https://github.com/Mesa-Labs-Archive/KnoxPatch/releases/tag/v0.6.8 ）用于让三星软件恢复使用（因为之前解BL锁导致了这些软件无法使用）
 
-3、Shamiko模块（ https://github.com/LSPosed/LSPosed.github.io/releases ）用于对应用隐藏Root（对少数应用无效）
+3、Shamiko模块（ https://github.com/LSPosed/LSPosed.github.io/releases ）用于对应用隐藏Root（对少数应用无效，例如中国移动）
 
-4、德尔塔（Delta）面具（ https://github.com/HuskyDG/magisk-files/releases ）隐藏Root的能力更强。不过刷此版本时最好选27001，26.4版本有可能变砖！
+4、德尔塔（Delta）面具（ https://github.com/HuskyDG/magisk-files/releases ）隐藏Root的能力更强。不过刷此版本时最好选 **R65C33E4F-kitsune (27001)**（ https://github.com/HuskyDG/magisk-files/releases/download/1707294287/app-release.apk ），26.4版本有可能变砖！
 
 5、MiPush模块（指南：https://bzmshang.top/MiPush-Framework_User-Guide ）
