@@ -67,3 +67,5 @@
 4、德尔塔（Delta）面具（ https://github.com/HuskyDG/magisk-files/releases ）隐藏Root的能力更强。不过刷此版本时最好选 **R65C33E4F-kitsune (27001)**（ https://github.com/HuskyDG/magisk-files/releases/download/1707294287/app-release.apk ），26.4版本有可能变砖！
 
 5、MiPush模块（指南：https://bzmshang.top/MiPush-Framework_User-Guide ）
+
+6、HMSPush模块（地址： https://github.com/fei-ke/HMSPush/releases/tag/v0.0.27 ）。HMSCore可在酷安或者华为应用商店下载。对应的Magisk模块（ https://github.com/fei-ke/HMSPush/releases/download/v0.0.5/HMSCore-v0.3.zip ）可将HMSCore变为系统应用，效果更强。
