@@ -56,6 +56,34 @@
 
 3、进入刷机模式，用Odin3将BL、CP、**修补的AP**、**HOME_CSC**刷入手机，这样一来就能在不丢数据的前提下升级系统。（不过在此之前最好还是备份一下，以防万一）
 
+### 4.4 KernelSU方式Root
+
+#### 4.4.1 GKI模式
+
+1、请先用三星版面具刷完Root。
+
+2、刷完之后，到 https://github.com/tiann/KernelSU/releases 页面寻找符合自己内核版本号的文件并下载，格式例如“android13-5.15.123_2023-11-boot.img.gz”。尽量选择版本号一致的，并且安全补丁最接近本机的。
+
+3、下载完解压，里面是镜像文件。使用三星版面具对其修补，修补完重命名为“boot.img”，然后用7zip将其压缩成tar格式，改名为“boot.img.tar”。
+
+4、打开odin3，将tar文件放到AP槽，刷入。
+
+5、刷完后，安装KernelSU管理器，打开后会显示“工作中GKI”，但里面的模块功能无法使用，因为有面具，和它冲突了。此时应当打开面具，卸载里面所有模块，再点击卸载面具-完全卸载，然后会自动重启。
+
+6、重启后，只剩下KernelSU，模块功能可以正常使用了。
+
+#### 4.4.2 LKM模式
+
+注：此模式需要编译内核才能用！还请自行编译或者求助大神……
+
+1、请先将手机刷成KernelSU的GKI模式，方法如上。
+
+2、下载Kernel Flasher。（ https://github.com/capntrips/KernelFlasher/releases/tag/v1.0.0-alpha20 ）
+
+3、对Kernel Flasher授予Root权限，依次点击查看-刷入-刷入AK3压缩包，将编译的内核刷入。注意！刷入完之后，千万别点重启，回到KernelSU，点击直接安装，等安装完再点击重启。
+
+4、重启后，点开KernelSU管理器，会发现已经是LKM模式了。
+
 ## 五、常用的模块或应用
 
 1、LSPosed模块（ https://github.com/LSPosed/LSPosed/releases/tag/v1.9.2 ）用于安装常用的Xposed模块功能。下载Zygisk版
@@ -68,4 +96,4 @@
 
 5、MiPush模块（指南：https://bzmshang.top/MiPush-Framework_User-Guide ）
 
-6、HMSPush模块（地址： https://github.com/fei-ke/HMSPush/releases/tag/v0.0.27 ）。HMSCore可在酷安或者华为应用商店下载。对应的Magisk模块（ https://github.com/fei-ke/HMSPush/releases/download/v0.0.5/HMSCore-v0.3.zip ）可将HMSCore变为系统应用，效果更强。
+6、HMSPush模块（地址： https://github.com/fei-ke/HMSPush/releases/tag/v0.0.27 ）。HMSCore可在酷安或者华为应用商店下载。对应的Magisk模块（ https://github.com/fei-ke/HMSPush/releases/download/v0.0.5/HMSCore-v0.3.zip ）可将HMSCore变为系统应用，效果更强。（补充：HMSCore最高支持版本为6.13.0.322，更高版本无法注册！）
